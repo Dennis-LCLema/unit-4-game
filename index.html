@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
+    <!--CSS-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="assest/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Bitter|Coiny" rel="stylesheet"></head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div id="logodiv"><img src="assest/Images/reaper..jpg" class="logo"></div>
+            <h1>The Reapers are attacking!</h1>
+        </div>
+        <div class="container-fluid"> <!--Rules Start-->
+            <div class="row" id="rulediv">
+                <div class="col-sm-9">
+                    <h2 id="titleRules">Instructions</h2>
+                    <p id="rules">
+                        Cammander! We are being under attack by the Reapers!!! We must send troops to go and destroy the Reapers!
+                        <br>
+                        By clicking one of the four troops you will be able to send them to the fight. each one you click will generate a radom number.
+                        <br> 
+                        The Reapers will have their own random number.  In order to win you have to equal your number to the Reapers.
+                        <br>
+                        The number of each troops will be hidden from you. you will have to click to see what vaules are your troops! (I know we are a military opperations but we are very disorginizes)
+                        <br> 
+                        Every time you defeat or lose to a reaper the game will reset and the number of each troop will change. 
+                        <br>
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                </div>
+        </div> <!--Rules End-->
+    </div> <!--Row 1: Title, Game Logo, Rules End-->
+
+    <div>
+        <div class="container-fluid">
+            <div class="row" id="images1">
+                <div class="col-sm-6">
+                    <img src="assest/Images/Commander-Shepard-mass-effect-3-38072999-900-1300.jpg" class="crystalimg" id="one">
+                </div>
+                <div class="col-sm-6">
+                    <img src="assest/Images/garrus.jpg" class="crystalimg" id="two">
+                </div>
+            </div>
+            <div class="row" id="images2">
+                <div class="col-sm-6">
+                    <img src="assest/Images/tali.png" class="crystalimg" id="three">
+                </div>
+                <div class="col-sm-6">
+                    <img src="assest/Images/wrex.png" class="crystalimg" id="four">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="panelStyle">
+        <div class="row panel-body">
+            <div class="col-sm-6">
+                Number to match:
+                <span id="number"></span>
+            </div>
+            <div class="col-sm-6">
+                Your number:
+                <span id="combined"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="panelStyle">
+        <div class="row panel-body">
+            <div class="col-sm-6">
+                Wins:
+                <span id="numberWins"></span>
+            </div>
+            <div class="col-sm-6"> 
+                Losses:
+                <span id="numberLosses"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row panel-body">
+            <div class="col-sm-12" id="audioControl">
+                <audio id="myAudio" controls autoplay="true" src="assest/Images/04. A Cerberus Agent.mp3" autostart="true" loop="true"></audio>
+            </div>
+        </div>
+    </div>
+</div> <!--Main Container End-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="assest/Java/game.js"></script>
+</body>
+
+</html
